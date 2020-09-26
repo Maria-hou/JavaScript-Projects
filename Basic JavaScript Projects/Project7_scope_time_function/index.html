@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!-- Link to the JavaScript file -->
+        <script src="JS/main.js"></script>    
+
+        <!-- These link to the funtions that use the Date(). elements -->
+        <p id="Greeting" onclick="get_Date()">Click Here.</p>
+        <br>
+        <p id="Fortune" onclick="get_Future()">Click here to see if it is the future.</p>
+        <br>
+
+        <!-- This creates a form in which the user can enter their weather
+        and the code outputs whether or not they should wear a jacket -->
+        <p>Add your local current temperature in Farenheit:</p>
+        <input id="Temp" value="">
+        <p id="Weather"></p>
+        <button onclick="Coat_Function()">Enter</button>
+
+        <!-- This calls a function that determines if it is morning, afternoon
+        or evening-->
+        <p id="Time_of_day"></p>
+        <button onclick="Time_function()">Click here to get the time.</button>
+    </body>
+</html>
