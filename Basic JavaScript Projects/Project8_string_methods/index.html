@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!-- Call the javascript file here-->
+        <script src="JS/main.js"></script>
+
+        <!-- This calls a funtion that uses the concat() method -->
+        <p id="Questions"></p>
+        <button onclick="Questions_function()">Click here for some questions to think about.</button>
+    
+        <!-- This calls a function that uses the slice() method -->
+        <p id="Subject"></p>
+        <button onclick="Slice_function()">Click here for subject name.</button>
+    
+        <!-- This calls a function that uses .toUpperCase()-->
+        <p id="Convert">Convert this sentence all to upper case.</p>
+        <button onclick="Upper_function()">Convert!</button>
+
+        <!-- This calls a function that uses search()-->
+        <p id="Search">This will find the index of the first occurance of the word 'the'!</p>
+        <button onclick="Search_function()">Locate!</button>
+    
+        <!-- This calls a function that will convert a number to a string-->
+        <p id="Num_2_string">This will convert the number 252 to a string: </p>
+        <button onclick="NumString_function()">Click here</button>
+
+        <!-- This calls a function that will shorted a number to a specified length-->
+        <p id="Precision">Click below to shorten 73249.7993027442 to the thousandth place</p>
+        <button onclick="Shorten_function()">Click here</button>
+
+        <!-- This calls a function that will fix a number to a specified length-->
+        <p id="Fixed"></p>
+        <button onclick="Fixed_function()">Click here to fix the previous number to 2 decimals</button>
+    
+        <!-- This calls a function that will use the valueOf() Method-->
+        <p id="Primitive"></p>
+        <button onclick="Value_function()">Click here to utilize valueOf </button>
+    </body>
+</html>
