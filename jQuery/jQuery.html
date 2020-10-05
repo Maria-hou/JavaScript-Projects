@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- We include jQuery by using a CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    
+    <script>
+        // When the document is fullyn loaded, the below code is ran
+        $(document).ready(function(){
+            //We append the following code to the html tag
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            <button id='alert'>Alert!</button>\
+                            <p id='hidden'>You clicked the button</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //I want to make the <p> with id of 'hidden' to be hidden at first
+            $("#hidden").hide();
+
+            //This changes the color of the second paragraph by using .css
+            $("#2").css({"color":"red"});
+
+            //When the 3rd paragraph is clicked on, the header of "Basic jQuery" becomes hidden
+            $("#3").click(function() {
+                $("h1").hide();
+            });
+
+            //When the button with id of "alert" is clicked on, the paragraph that was originally
+            //hidden is now displayed
+            $("#alert").on("click", function(){
+                $("#hidden").show();
+            });
+        });
+    </script>
+    
+</html>
