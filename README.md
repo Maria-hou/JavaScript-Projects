@@ -1,4 +1,4 @@
-# Basic JavaScript Project
+# Basic JavaScript Projects
 These are basic projects written in JavaScript. 
 
 ## Projects
